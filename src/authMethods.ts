@@ -31,7 +31,7 @@ export const authMethods = (app: Elysia) =>
         secret: 'es un secreto de tu mirada y la mia'
       })
     )
-    .post('/sign-in', ({ body }) => signIn(body), {
+    .post('/sign-in-test', ({ body }) => signIn(body), {
       body: t.Object({
         username: t.String(),
         password: t.String()
